@@ -1,0 +1,75 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{polski}
+\usepackage[utf8x]{inputenc}
+\usepackage{array, seqsplit, xcolor}
+\usepackage[margin=3cm]{geometry}
+\usepackage[section]{placeins}
+\usepackage{indentfirst}
+\usepackage{float}
+
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+  
+\renewcommand{\arraystretch}{1.5}
+\floatstyle{plaintop}
+\restylefloat{table}
+
+\author{dolor sit amet}
+\date{01.01.1970}
+\definecolor{lightgray}{gray}{0.8}
+\linespread{1}
+\pagenumbering{arabic}
+\setcounter{secnumdepth}{0}
+\title{Lorem ipsum}
+
+
+\begin{document}
+\maketitle
+
+\section{Sed pretium}
+
+Sed pretium, diam ac suscipit gravida, est tortor vestibulum enim, in iaculis lorem diam et urna. Suspendisse et porttitor ipsum. Praesent congue elementum rutrum. 
+
+
+\subsection{Etiam fringilla}
+
+Etiam fringilla turpis sit amet hendrerit ornare. Suspendisse velit tellus, tempor sit amet lobortis molestie, posuere a tortor.  \cite{a}.
+
+  \subsection{Vivamus ligula leo}
+
+  Vivamus ligula leo, commodo ac tincidunt sed, congue eu massa.
+
+  \begin{itemize}
+    \item Lorem ipsum dolor sit amet
+    \item Lorem ipsum dolor sit amet
+  \end{itemize}
+
+  \begin{table}[htbp]  
+    \caption {Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.}
+    
+    \begin{tabular}{|c|c|c|}
+      \hline
+      Lorem ipsum$^{*}$ & \specialcell{Lorem\\ipsum} & Lorem ipsum \\ \hline
+      Lorem ipsum & 100 & 200 \\ \hline
+      Lorem ipsum & 400 & 500 \\ \hline
+    \end{tabular}
+    
+    \newline
+    \begin{footnotesize}
+    $^{*}$ Curabitur aliquet augue sit amet lectus pharetra blandit \cite{a, b}.
+    \end{footnotesize}
+  \end{table}
+
+Quisque elementum, ante eget porta condimentum, nisl odio facilisis magna, a eleifend mi ante id arcu. Praesent volutpat lacus sed tortor hendrerit, sed semper tortor accumsan. Curabitur sollicitudin leo non tellus feugiat, nec aliquam orci consequat.
+
+\begin{thebibliography}{99}
+
+  \bibitem{a}
+    Ipsum Lorem, \textit{dolor sit amet}
+  \bibitem{b}
+    Ipsum Lorem, \textit{dolor sit amet}
+
+\end{thebibliography}
+
+\end{document}
