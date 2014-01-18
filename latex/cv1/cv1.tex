@@ -1,0 +1,65 @@
+\documentclass[11pt,a4paper]{article}
+
+
+
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=3cm]{geometry}
+\usepackage[none]{hyphenat}
+\usepackage{array, multirow, xcolor}
+\definecolor{lightgray}{gray}{0.8}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+\setcounter{secnumdepth}{0}
+\linespread{1}
+\title{CURRICULUM VITAE}
+\date{}
+\author{}
+\pagenumbering{gobble}
+\begin{document}
+\maketitle
+
+% dane osobowe
+\section{Lorem Ipsum}
+\begin{tabular}{ p{3cm} !{\VRule} p{12cm} }
+Urodzony &  \\
+Zamieszkały &  \\
+Telefon &  \\
+E-mail &  \\
+\end{tabular}
+
+% doświadczenie
+\section{Doświadczenie zawodowe}
+\begin{tabular}{ p{3cm} !{\VRule} p{12cm} }
+    data od - do & \textbf{} \\
+    obowiązki: &  \\
+    &  \\
+\end{tabular}
+
+% języki
+\section{Znajomość języków}
+\begin{tabular}{ p{3cm} !{\VRule} p{12cm} }
+j.  &  \\
+\end{tabular}
+
+% technologie
+\section{Znajomość technologii i zagadnień}
+\begin{tabular}{ p{3cm} !{\VRule} l !{\VRule} l }
+Grupa & Technologia & Poziom \\
+&  &  \\
+\multirow{2}{*}{\parbox{3cm}{}} & Zagadnienie & Poziom \\
+&  &  \\
+\end{tabular}
+
+% wymagania finansowe
+\section{Minimalne wymagania finansowe}
+
+
+% stopka
+\section{}
+\scriptsize{
+Niniejszym oświadczam, że wyrażam zgodę na przetwarzanie moich danych osobowych w celu przeprowadzenia procesu
+rekrutacji (zgodnie z ustawą z dnia 29.08.1997r. o ochronie danych osobowych Dz. U. Nr 133, poz. 883).
+}
+
+\end{document}
